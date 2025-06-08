@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>posicionamento</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                height: 200px;
+                padding: 20px;
+            }
+
+            .caixa {
+                width: 150px;
+                height: 50px;
+                margin: 20px;
+                color: white;
+                text-align: center;
+                line-height: 50px;
+                font-weight: bold;
+            }
+
+            .static {
+                position: static;
+                background-color: gray;
+            }
+
+            .relative {
+                position: relative;
+                top: 20px;
+                left: 20px;
+                background-color: blue;
+            }
+
+            .container {
+                position: relative;
+                height: 200px;
+                left: 50px;
+                background-color: lightgreen;
+            }
+
+            .absolute {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                background-color: red;
+            }
+
+            .fixed {
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                background-color: orange;
+            }
+
+            .sticky {
+                position: sticky;
+                top: 0;
+                background-color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="caixa fixed">fixed</div>
+        <p>define o posicionamento de um elemento em relação à janela do navegador. Este elemento fica fixo na tela, mesmo que a página seja rolada, tornando-o ideal para elementos como cabeçalhos, rodapés ou menus que devem estar sempre visíveis.</p>
+
+        <div class="caixa static">static</div>
+        <p>Ao utilizar o position: static, o elemento segue o fluxo normal do documento, sem ser afetado por propriedades como top, bottom, left ou right</p>
+
+        <div class="caixa relative">relative</div>
+        <p>A classe "relative" aplica a propriedade CSS position: relative ao elemento. Isso faz com que o elemento seja posicionado com base na sua posição original no fluxo do documento, mas permite que você mova o elemento usando as propriedades top, bottom, left e right. Ao aplicar position: relative, você pode ajustar a posição do elemento em relação à sua posição original.</p>
+
+        <div class="container">
+            <div class="caixa absolute">absolute</div>
+            <p>É uma classe CSS que define o comportamento de posicionamento da caixa. Com "position: absolute", a caixa será posicionada de forma absoluta, com relação ao seu elemento pai que tenha "position: relative" ou "position: absolute". Caso o elemento pai não tenha nenhum desses posicionamentos, será considerado o corpo (<body>) do documento. A caixa também será removida do fluxo normal do documento, o que significa que outros elementos não serão afetados pela posição da caixa.</p>
+        </div>
+
+        <div class="caixa sticky">sticky</div>
+        <p>propriedade CSS position: sticky. Isso significa que a div "caixa" se comportará como uma div normal até que se atinja um ponto de rolagem definido. A partir desse ponto, ela se fixará na tela, como se estivesse em posição fixa, mas em relação à rolagem da página, e não em relação à tela como no position: fixed. </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aliquam dignissimos alias obcaecati fuga commodi animi voluptate vero? Dolorum animi culpa magnam veniam reiciendis rerum quia quisquam amet eaque quo.</p>
+        <br>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio consequuntur natus eaque. Placeat fugiat reiciendis sapiente aperiam at obcaecati perferendis saepe facilis recusandae ipsum cupiditate, quo adipisci porro a atque?</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque odit, quis non cupiditate architecto dignissimos explicabo pariatur ipsam, doloremque deleniti delectus tenetur commodi enim. Sed debitis ipsa itaque et?</p>
+        <br> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, praesentium in vero excepturi quae molestias et officiis voluptate quam doloremque dicta veritatis tenetur ducimus, blanditiis ipsam saepe autem? Beatae, culpa!</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad enim quaerat corporis magni veniam sapiente, tenetur, ut deserunt architecto veritatis id totam ullam, est provident sint animi delectus necessitatibus assumenda!</p>
+        <br> <br> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur perferendis soluta libero corporis reprehenderit. Aut voluptas aliquid facere accusantium nam ipsum sunt officia placeat suscipit fugit quidem et, at dolorem?</p>
+        <br> <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque cupiditate, assumenda quis totam consectetur enim dolor pariatur omnis ratione quibusdam explicabo provident quas sint delectus sed voluptates facere natus mollitia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptates vitae voluptatum quae optio, dolore dolorem magnam dignissimos itaque doloremque ea, praesentium id odio alias aliquam modi animi suscipit voluptate!</p>
+        <br> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit pariatur voluptatem asperiores, ipsum rerum nemo fugiat distinctio possimus odio ratione sint magnam, doloribus inventore quisquam. Quasi repudiandae aliquam facere reiciendis!</p>
+        <br> <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa iure fugit reiciendis nesciunt iste incidunt debitis ex sunt cupiditate ipsam libero minus doloribus, laudantium sint maiores corrupti provident vel?</p>
+        <br> <br>    
+    </body>
+</html>
