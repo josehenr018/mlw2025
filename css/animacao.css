@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+    background-color: #f0f0f0; 
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#caixa-estilo {
+    width: 80%; 
+    margin: 0 auto 30px auto; 
+    padding: 20px;
+    background: linear-gradient(to right, #6a5acd, #4169e1); 
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+    color: white;
+    text-align: left;
+    transition: all 0.5s ease-in-out; 
+}
+
+#caixa-estilo h2 {
+    color: white;
+    margin-top: 0;
+}
+
+#caixa-estilo ul {
+    list-style: none; 
+    padding: 0;
+}
+
+#caixa-estilo li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px; 
+}
+
+#caixa-estilo li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white; 
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+#caixa-estilo:hover {
+    transform: scale(1.03); 
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.7); 
+    background: linear-gradient(to left, #4169e1, #6a5acd); 
+}
+
+#botao-estilo {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #28a745; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 5px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; 
+}
+
+#botao-estilo:hover {
+    background-color: #218838;
+    cursor: pointer;
+}
+
+#circulo-animado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%; 
+    margin: 0 auto; 
+    position: relative; 
+    animation: animacaoPulo 1.5s infinite ease-in-out alternate; 
+}
+
+    @keyframes animacaoPulo { 
+    0% {
+        transform: translateY(0); 
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+    }
+    50% {
+        transform: translateY(-20px); 
+        box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5); 
+    }
+    100% {
+        transform: translateY(0); 
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+    }
+}
